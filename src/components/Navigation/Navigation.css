@@ -1,0 +1,131 @@
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list_promo {
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  column-gap: 10px;
+}
+
+.nav__list_profile {
+  flex-direction: column;
+}
+
+.nav__list_mobile {
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding-top: 159px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 766px) {
+  .nav__list_footer {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.nav__list-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  margin-right: 30px;
+}
+
+.nav__list-item:last-of-type {
+  margin-right: 0;
+}
+
+.nav__list-item_promo {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 766px) {
+  .nav__list-item_promo {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
+
+.nav__list-item_profile {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.23;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+
+.nav__list-item_menu {
+  font-size: 14px;
+  line-height: 1.28;
+  margin-right: 20px;
+}
+
+.nav__list-item_menu:nth-last-child(2) {
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 968px) {
+  .nav__list-item_menu {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-right: 0;
+    margin-bottom: 28px;
+  }
+
+  .nav__list-item_menu:nth-last-child(2) {
+    margin-right: 0;
+  }
+
+  .nav__list-item_menu:last-of-type {
+    margin-bottom: 91px;
+    margin-top: auto;
+  }
+}
+
+.nav__list-item_main {
+  display: none;
+}
+
+@media screen and (max-width: 968px) {
+  .nav__list-item_main {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .nav__list-item_footer {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.nav__list-item_external {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.nav__close {
+  display: none;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.nav__close_active {
+  display: block;
+}

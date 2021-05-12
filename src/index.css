@@ -1,0 +1,129 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.root {
+  background-color: #202020;
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.link {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
+.link_exit {
+  color: #ee3465;
+}
+
+.link_blue {
+  color: #4285f4;
+}
+
+.button {
+  color: #000;
+  border-radius: 3px;
+  padding: 8px 20px;
+}
+
+.button_green {
+  background-color: #3ddc84;
+}
+
+.button_blue {
+  color: #fff;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.63;
+  background-color: #4285f4;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 48px;
+}
+
+.button_blue:focus {
+  outline: none;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account__item {
+  margin-right: 17px;
+}
+
+@media screen and (max-width: 968px) {
+  .account__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.section-header {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.22;
+  margin: 0 0 70px 0;
+  padding: 0 0 22px 0;
+  border-bottom: 1px solid #dadada;
+}
+
+.overlay {
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.overlay_active {
+  display: block;
+}
+
+@media screen and (max-width: 766px) {
+  .overlay_active {
+    display: none;
+  }
+}
