@@ -68,30 +68,24 @@
 }
 
 .about__items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
   margin-bottom: 110px;
 }
 
 @media screen and (max-width: 968px) {
   .about__items {
+    column-gap: 30px;
     margin-bottom: 93px;
   }
 }
 
 @media screen and (max-width: 766px) {
   .about__items {
-    flex-direction: column;
+    row-gap: 56px;
+    grid-template-columns: 1fr;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 766px) {
-  .about__item {
-    margin-bottom: 56px;
-  }
-
-  .about__item:last-of-type {
-    margin-bottom: 0;
   }
 }
 

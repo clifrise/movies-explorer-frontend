@@ -5,7 +5,7 @@ import './SearchForm.css';
 function SearchForm() {
   return (
     <section className="search">
-      <form action="#" className="search__form">
+      <form action="#" className="search__form" required>
         <input
           type="text"
           placeholder="Фильм"
