@@ -1,0 +1,50 @@
+.path {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width: 766px) {
+  .path {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.path__header {
+  text-align: center;
+  padding: 9px 14px;
+}
+
+.path__header_frontend {
+  color: #fff;
+  background-color: #303030;
+}
+
+.path__header_backend {
+  color: #000;
+  background-color: #3ddc84;
+}
+
+.path__header_backend {
+  color: #000;
+  background-color: #3ddc84;
+}
+
+.path__description {
+  color: #8b8b8b;
+  text-align: center;
+  padding: 9px 14px;
+}
+
+.path__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 766px) {
+  .path__item {
+    font-size: 11px;
+    line-height: 1.18;
+  }
+}

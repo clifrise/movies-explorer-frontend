@@ -1,0 +1,52 @@
+.sign-form {
+  width: 100%;
+}
+
+.sign-form__label {
+  color: #8b8b8b;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.sign-form__field {
+  color: #fff;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.23;
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: #2f2f2f;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.sign-form__field:focus {
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.25);
+}
+
+.sign-form__field_error {
+  color: #ee3465;
+  margin-bottom: 10px;
+}
+
+.sign__error {
+  display: none;
+  color: #ee3465;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.sign__error_active {
+  display: block;
+  margin-bottom: 20px;
+}
