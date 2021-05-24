@@ -1,26 +1,21 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import './MoviesCardList.css';
 
-function MoviesCardList() {
+function MoviesCardList({ movies, onAddLike, onRemoveLike, isMovieSaved }) {
   return (
     <section className="movies">
-      <Switch>
-        <Route path="/movies">
-          <MoviesCard liked={true} />
-          <MoviesCard />
-          <MoviesCard liked={true} />
-          <MoviesCard />
-          <MoviesCard liked={true} />
-          <MoviesCard />
-        </Route>
-        <Route path="/saved-movies">
-          <MoviesCard liked={true} />
-          <MoviesCard liked={true} />
-          <MoviesCard liked={true} />
-        </Route>
-      </Switch>
+      {movies.map((movie) => {
+        return (
+          <MoviesCard
+            key={movie.id ?? movie._id}
+            movie={movie}
+            onAddLike={onAddLike}
+            onRemoveLike={onRemoveLike}
+            isMovieSaved={isMovieSaved}
+          />
+        );
+      })}
     </section>
   );
 }

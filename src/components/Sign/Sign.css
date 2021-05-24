@@ -14,8 +14,8 @@
 
 .sign__container {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  max-width: 396px;
   justify-content: center;
   align-items: center;
   max-width: 396px;
@@ -76,4 +76,18 @@
   cursor: pointer;
   padding: 13px 0;
   margin-bottom: 16px;
+}
+
+.sign__button_disabled {
+  cursor: initial;
+  background-color: lightgray;
+}
+
+.sign__button_disabled:hover {
+  opacity: 1;
+}
+
+.sign__error {
+  color: #ee3465;
+  font-size: 12px;
 }

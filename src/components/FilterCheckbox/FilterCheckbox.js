@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import './FilterCheckbox.css';
 
-function FilterCheckbox() {
+function FilterCheckbox({ onShortClick }) {
   const [switcherActive, setSwitcherActive] = useState(false);
 
   const handleSwitcherClick = function (e) {
     setSwitcherActive(!switcherActive);
+    onShortClick();
   };
 
-  let switcherOff = switcherActive
-    ? 'switcher__off switcher__off_enabled'
-    : 'switcher__off';
-  let switcherOn = switcherActive
-    ? 'switcher__on switcher__on_enabled'
-    : 'switcher__on';
+  let switcherOff = switcherActive ? 'switcher__off switcher__off_enabled' : 'switcher__off';
+  let switcherOn = switcherActive ? 'switcher__on switcher__on_enabled' : 'switcher__on';
   let switcherButtonEnabled = switcherActive
     ? 'switcher__button switcher__button_enabled'
     : 'switcher__button';

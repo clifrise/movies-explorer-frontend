@@ -32,9 +32,21 @@ body {
 }
 
 .link {
+  font-weight: normal;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
+}
+
+.link_active {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 968px) {
+  .link_active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+  }
 }
 
 .link:hover {
@@ -78,6 +90,11 @@ body {
 
 .button_blue:focus {
   outline: none;
+}
+
+.button__link {
+  background: transparent;
+  border: none;
 }
 
 .account {

@@ -4,7 +4,7 @@
 
 .sign-form__label {
   color: #8b8b8b;
-  display: inline-block;
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -14,6 +14,7 @@
 
 .sign-form__field {
   color: #fff;
+  display: block;
   box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
@@ -38,15 +39,11 @@
 }
 
 .sign__error {
-  display: none;
+  display: block;
   color: #ee3465;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 1.2;
-}
-
-.sign__error_active {
-  display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
