@@ -6,10 +6,7 @@ function Portfolio() {
     <div className="portfolio">
       <p className="portfolio__header">Портфолио</p>
       <div className="portfolio__item">
-        <a
-          href="https://github.com/clifrise/how-to-learn"
-          className="link portfolio__link"
-        >
+        <a href="https://github.com/clifrise/how-to-learn" className="link portfolio__link">
           Статичный сайт
         </a>
       </div>
@@ -22,10 +19,7 @@ function Portfolio() {
         </a>
       </div>
       <div className="portfolio__item">
-        <a
-          href="http://ruslanbelyi.students.nomoredomains.icu/"
-          className="link portfolio__link"
-        >
+        <a href="http://ruslanbelyi.students.nomoredomains.icu/" className="link portfolio__link">
           Одностраничное приложение
         </a>
       </div>

@@ -8,9 +8,7 @@ function Footer() {
       <Route exact path={['/movies', '/saved-movies', '/']}>
         <footer className="footer">
           <div className="footer__container">
-            <p className="footer__description">
-              Учебный проект Яндекс.Практикум х BeatFilm.
-            </p>
+            <p className="footer__description">Учебный проект Яндекс.Практикум х BeatFilm.</p>
             <div className="footer__notice">
               <span className="footer__copyright">© 2021</span>
               <nav className="nav footer__nav">

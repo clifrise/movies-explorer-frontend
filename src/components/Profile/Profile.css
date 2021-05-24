@@ -30,6 +30,7 @@
 
 .profile__name {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 4px;
@@ -38,9 +39,15 @@
 
 .profile__email {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 4px;
+}
+
+.profile__form {
+  width: 100%;
+  max-width: 410px;
 }
 
 .profile__data {
@@ -49,7 +56,6 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 1.18;
-  min-width: 410px;
   margin: 0 auto 220px auto;
 }
 
@@ -82,4 +88,37 @@
 
 .profile__field:focus {
   opacity: 0.25;
+}
+
+.profile__message {
+  display: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.profile__message_active {
+  display: block;
+}
+
+.profile__field_error {
+  color: #ee3465;
+  margin-bottom: 10px;
+}
+
+.profile__error {
+  display: block;
+  width: 100%;
+  color: #ee3465;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.profile__edit_disabled {
+  cursor: initial;
+  opacity: 0.6;
 }
